@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+
+    <link href="%PUBLIC_URL%/css/bootstrap.css" rel="stylesheet" />
+    <link href="%PUBLIC_URL%/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="%PUBLIC_URL%/css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/icomoon-social.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+  
+
+    <script src="%PUBLIC_URL%/js/jquery.js"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>		
+    <script src="//use.edgefonts.net/bebas-neue.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script src="%PUBLIC_URL%/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i]. className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }  
+      </script>
+  </body>
+</html>
